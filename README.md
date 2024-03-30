@@ -1,2 +1,1 @@
-"# hexlet-git." 
 # python-project
