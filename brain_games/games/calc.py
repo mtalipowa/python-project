@@ -4,7 +4,7 @@ from random import randint
 rules = 'What is the result of the expression?'
 
 
-def calculation(symbol, first_number, second_number):
+def calculation(symbol: str, first_number: int, second_number: int) -> int:
     match symbol:
         case '*': return first_number * second_number
         case '+': return first_number + second_number
@@ -12,7 +12,7 @@ def calculation(symbol, first_number, second_number):
 
 
 def main():
-    symbols = ["+", "-", "*"]
+    symbols = ("+", "-", "*")
     symbol = random.choice(symbols)
     first_number = randint(1, 15)
     second_number = randint(1, 15)

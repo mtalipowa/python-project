@@ -7,7 +7,7 @@ def main():
     lenth = randint(5, 10)
     first_number = randint(1, 5)
     step = randint(1, 5)
-    last_number = first_number + step * (lenth)
+    last_number: int = first_number + step * (lenth)
 
     list = [*range(first_number, last_number, step)]
 

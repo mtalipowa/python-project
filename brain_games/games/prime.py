@@ -3,7 +3,7 @@ from random import randint
 rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_symply(number):
+def is_symply(number: int):
     if number <= 1:
         return False
 
@@ -19,8 +19,5 @@ def is_symply(number):
 
 def main():
     question = randint(1, 100)
-    if is_symply(question):
-        result = 'yes'
-    else:
-        result = 'no'
+    result = 'yes' if is_symply(question) else 'no'
     return [question, result]
